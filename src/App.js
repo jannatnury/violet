@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 // import { Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import NotFound from './components/NotFound/NotFound';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         {/* <Route path="/courses" element={}></Route> */}
+        <Route path="/*" element={<NotFound></NotFound>}></Route>
 
       </Routes>
 
