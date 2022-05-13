@@ -1,0 +1,12 @@
+.button{
+    background-color: #23ADBA;
+}
+.button a {
+    text-decoration: none;
+    color: white;  
+}
+.img-fluid{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
