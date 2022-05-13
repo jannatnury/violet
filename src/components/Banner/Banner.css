@@ -1,0 +1,28 @@
+/* hero section styles */.hero-sec{
+    background-color: #F6F6F6;
+
+}
+
+.hero-sec{
+    display: flex;
+    align-items: center;
+}
+.hero-text{
+    color: rgb(83,10,158); 
+}
+.hero-text p{
+    color: black;
+}
+/* banner image styles */
+.banner-img{
+    width: 550px;
+    height: auto;
+}
+/* mobile responsive */
+@media screen and (max-width:576px) {
+    .banner-img{
+        width: 350px;
+        height: auto;
+    }
+    
+}
