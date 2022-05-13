@@ -1,0 +1,32 @@
+.feedback-sec{
+    background-color:#fffbf9 ;
+}
+.feedback img{
+    width: 350px;
+    height: auto;
+}
+#email-input{
+    width: 80%;
+    height: 60px;
+    border: 2px solid #3F3D56;
+}
+#comments{
+    width: 80%;
+    height:100px;
+    border: 2px solid #3F3D56;
+}
+.feedback-btn{
+    color: white;
+    border: none;
+    background-color: #34cbd9;
+}
+/* mobile resposive */
+@media screen and (max-width:576px) {
+    .feedback img{
+        width: 250px;
+        height: auto;
+        margin-top: 20px;
+        order: inherit;
+    }
+    
+}
