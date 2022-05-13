@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
+import Courses from './components/Courses/Courses';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 // import { Routes } from 'react-router-dom';
@@ -22,7 +23,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-        {/* <Route path="/courses" element={}></Route> */}
+        <Route path="/courses" element={<Courses></Courses>}></Route>
         <Route path="/*" element={<NotFound></NotFound>}></Route>
 
       </Routes>
