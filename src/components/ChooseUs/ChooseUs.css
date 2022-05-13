@@ -1,0 +1,25 @@
+.skill-container{
+    background-color: rgb(246, 252, 254);
+}
+.brand-name{
+    color: #FF9482;
+}
+.img-container img{
+    width: 450px;
+    height: auto;
+}
+.our-quality{
+    display: flex;
+    align-items: center;
+}
+.our-quality h4{
+    color: #638f6c;
+}
+/* mobile responsive */
+@media screen and (max-width:576px) {
+    .img-container img{
+        width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+    }   
+}
