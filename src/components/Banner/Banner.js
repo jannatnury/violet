@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css';
 import img from '../../assets/images/camera.png';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -15,7 +16,9 @@ const Banner = () => {
                 <p>
                     Find the right instructor for you. Choose from many topics, skill levels, and languages. Shop thousands of high-quality on-demand online courses. Start learning today.
                 </p>
-                <button className='button p-2 text-white border-0' type="submit">Get Started</button>
+                <button className='button p-2 text-white border-0' type="submit">
+                    <Link to="/courses">Get Started</Link>
+                </button>
             </div>
         </div>
     );

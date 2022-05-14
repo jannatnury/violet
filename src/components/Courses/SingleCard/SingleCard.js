@@ -13,7 +13,7 @@ const SingleCard = ({ card }) => {
                     <p className="card-text">{details}</p>
                     <p className='card-text fw-bold'>Price: {price} tk</p>
                     <button className='button px-3 py-2 text-white border-0' type="submit">
-                        <Link to="/cources">Details</Link>
+                        <Link to="/courses">Details</Link>
                     </button>
                 </div>
             </div>
