@@ -1,7 +1,18 @@
+/* image style */
 .checkout-img{
     width: 350px;
     height: 250px;
 }
+
+/* form styles */
+.checkout-container{
+    background-color: #E0F7FF;
+}
+.checkout-btn{
+    border: 2px solid ;
+    background-color: #fde0bc;
+}
+/* moboile responsive */
 @media screen and (max-width:576px) {
     .checkout-img{
         width: 250px;
