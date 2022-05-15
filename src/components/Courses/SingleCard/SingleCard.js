@@ -9,7 +9,7 @@ const SingleCard = ({ card }) => {
             <div className='p-3 h-100'>
                 <div className=" shadow row justify-content-between align-items-center  h-100">
                     <div>
-                        <img src={img} className="w-100" alt="card image" />
+                        <img src={img} className="card-img" alt="card image" />
                     </div>
                     <div className="card-body">
                         <h5 className="card-title text-secondary font-monospace">{name}</h5>

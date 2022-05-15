@@ -56,7 +56,7 @@ const Signin = () => {
     const handleGoogle = () => {
         signInWithGoogle();
     }
-
+// toast on password reset
     const resetPassword = () => {
         if (userInfo.email != "") {
             const resolveTime = new Promise(resolve => setTimeout(resolve, 2000));

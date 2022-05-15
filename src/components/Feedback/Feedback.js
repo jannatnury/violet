@@ -1,16 +1,18 @@
 import React from 'react';
 import './Feedback.css';
 import img from '../../assets/images/emails.svg';
+import { toast } from 'react-toastify';
 
 
 
 const Feedback = () => {
-    //  const notifySuccess = (message) => {
-    //         toast.success(message, {
-    //             theme: "dark",
-    //             position: toast.POSITION.TOP_CENTER
-    //         });
-    //     }
+    // const giveFeedback = () => {
+    //     toast.promise(
+    //         {
+    //             "Feedback Received";
+    //         }
+    //     )
+    // }
     return (
         <div className='mt-5 shadow container p-4 mb-5 feedback-sec m-auto'>
             <h2 className='mt-3'>Give Your Feedback</h2>
