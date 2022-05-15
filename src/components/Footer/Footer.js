@@ -13,7 +13,7 @@ const Footer = () => {
                     <img src={logo} alt="" /></Link>
                     <p>Violet, Inc.is a for-profit massive open online course provider aimed at professional adults and students. Her, students take courses primarily to improve job-related skills.
                     </p>
-                    <p>Copyright <small><i className="fas fa-copyright"></i></small> 2022, Jannat Nury</p>
+                    <p> <small><i className="fas fa-copyright"></i></small> 2022, Jannat Nury</p>
                 </div>
                 <div className="col-lg-6">
                     <h5>Contract With Us</h5>
