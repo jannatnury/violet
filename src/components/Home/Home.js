@@ -13,7 +13,7 @@ const Home = () => {
             <Courses></Courses>
             <ChooseUs></ChooseUs>
             <Feedback></Feedback>
-            <CheckOut></CheckOut>
+            {/* <CheckOut></CheckOut> */}
         </div>
     );
 };

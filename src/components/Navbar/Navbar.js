@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import img from '../../assets/images/brand-logo.png';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { auth } from '../../firebase.init';
 
 const Navbar = () => {
+    const [user,setUser]=useState({});
+    useEffect(()=>{
+        onAuthStateChanged(auth,(user)=>{
+            if(user){
+                setUser(user);
+                // console.log(user);
+            }
+            else{
+                setUser({});
+            }           
+        });
+    },[]);
+
+    const handleSignOut = () => {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+        }).catch((error) => {
+            // An error happened.
+        });
+    }
 
     return (
         <div>
@@ -31,20 +53,19 @@ const Navbar = () => {
                                 <Link className="nav-link" to='/blogs'>Blog</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='sign-in'>Sign In</Link>
+                                <Link className="nav-link" to='/contact'>Contact</Link>
                             </li>
-
-                            {/* {
+                            {
                                 user?.uid ? (
                                     <li className="nav-item">
-                                        <Link onClick={handleSignout} className="nav-link fw-bolder" to="/">Sign Out</Link>
+                                        <Link onClick={handleSignOut} className="nav-link fw-bolder" to="/">Sign Out</Link>
                                     </li>
                                 ) : (
                                     <li className="nav-item">
                                         <Link className="nav-link fw-bolder" to="/sign-in">Sign In</Link>
                                     </li>
                                 )
-                            } */}
+                            }
                         </ul>
                     </div>
                 </div>

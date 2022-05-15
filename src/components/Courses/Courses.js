@@ -14,9 +14,9 @@ const Courses = () => {
         
     },[]);
     return (
-        <div>
+        <div className='my-5 container'>
             <h2 className='mt-5'>Popular Courses</h2>
-            <div className='row container m-auto mb-5 g-5 '>
+            <div className='row g-4 '>
                {
                    cards.map(card=>(<SingleCard key={card.id} card={card}></SingleCard>))
                }

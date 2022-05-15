@@ -1,7 +1,7 @@
 import React from 'react';
 import './CheckOut.css';
 import img from '../../assets/images/checkout1.jpg';
-import { Link } from 'react-router-dom';
+
 
 const CheckOut = () => {
     return (
