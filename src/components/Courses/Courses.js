@@ -21,9 +21,6 @@ const Courses = () => {
                    cards.map(card=>(<SingleCard key={card.id} card={card}></SingleCard>))
                }
             </div>
-            <button className='button p-2 text-white border-0 mb-3 mt-0'>
-                <Link to="/courses">View More Courses</Link>
-            </button>
             
         </div>
     );

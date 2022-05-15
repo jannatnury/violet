@@ -33,22 +33,15 @@ const Signin = () => {
             setUserInfo({ ...userInfo, email: "" })
         }
     }
-    const passwordChange = (e) => {
-        const passwordRegex = /.{6,}/;
-        const validPassword = passwordRegex.test(e.target.value);
+    const passwordChange = (event) => {
 
-        if (validPassword) {
-            setUserInfo({ ...userInfo, password: e.target.value });
-            setErrors({ ...errors, password: "" });
-        } else {
-            setErrors({ ...errors, password: "Must Conatin Minimum 6 Characters!" });
-            setUserInfo({ ...userInfo, password: "" })
-        }
+        setUserInfo({ ...userInfo, password: event.target.value });
 
     }
 
     const handleSignin = (event) => {
         event.preventDefault();
+        console.log(userInfo);
 
         signInWithEmail(userInfo.email, userInfo.password);
 
@@ -72,22 +65,6 @@ const Signin = () => {
             toast("Enter your email.");
         }
     }
-
-    useEffect(() => {
-        const error = hookError || googleError;
-        if (error) {
-            switch (error?.code) {
-                case "auth/invalid-email":
-                    toast.error("Invalid Email!");
-                    break;
-                case "auth/invalid-password":
-                    toast.error("Wrong Password.")
-                    break;
-                default:
-                    toast.error("Something Went Wrong.")
-            }
-        }
-    }, [hookError, googleError])
 
     const navigate = useNavigate();
     const location = useLocation();
