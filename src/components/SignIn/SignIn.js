@@ -21,12 +21,12 @@ const Signin = () => {
     const [signInWithEmail, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
 
-    const handleEmailChange = (e) => {
+    const handleEmailChange = (event) => {
         const emailRegex = /\S+@\S+\.\S+/;
-        const validEmail = emailRegex.test(e.target.value);
+        const validEmail = emailRegex.test(event.target.value);
 
         if (validEmail) {
-            setUserInfo({ ...userInfo, email: e.target.value })
+            setUserInfo({ ...userInfo, email: event.target.value })
             setErrors({ ...errors, email: "" })
         } else {
             setErrors({ ...errors, email: "Invalid Email" })

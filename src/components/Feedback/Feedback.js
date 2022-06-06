@@ -7,13 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 
 const Feedback = () => {
-    // const giveFeedback = () => {
-    //     toast.promise(
-    //         {
-    //             "Feedback Received";
-    //         }
-    //     )
-    // }
+    
     return (
         <div className='mt-5 shadow container p-4 mb-5 feedback-sec m-auto'>
             <ToastContainer />

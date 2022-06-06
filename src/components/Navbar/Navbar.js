@@ -58,7 +58,7 @@ const Navbar = () => {
                             {
                                 user?.uid ? (
                                     <li className="nav-item">
-                                        <Link onClick={handleSignOut} className="nav-link fw-bolder" to="/">Sign Out</Link>
+                                        <Link  className="nav-link fw-bolder" to="/">Sign Out</Link>
                                     </li>
                                 ) : (
                                     <li className="nav-item">
